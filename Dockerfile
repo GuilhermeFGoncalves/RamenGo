@@ -10,6 +10,6 @@ RUN mvn clean install
 FROM openjdk:17-jre-slim
 FROM openjdk:7-jdk-slim
 
-EXPOSE 8080
+EXPOSE 8081
 
 COPY --from=build /target/*.jar app.jar
